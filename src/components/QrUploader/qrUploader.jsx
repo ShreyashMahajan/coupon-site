@@ -36,20 +36,17 @@ export default function ImageUploader({ onFileSelectSuccess, onFileSelectError ,
 	const supportedFileEnds = supportedFiles.map((file) => file.split("/")[1]).join(", ");
 
     const inputRef = useRef(null);
-	const childRef = useRef(null);
 
 
 	const [fileName, setFileName] = useState();
 	const [isFileError, setIsFileError] = useState(false);
 	const  [loading, setLoading] = useState(false)
 	
-	console.log('loading',loading,isFileError)
     
 	useEffect(() => {
 		if(!isFileError && fileName){
 			setLoading(true)
       fakeQrValidator('error occured', false).then( response => {
-		console.log('response',response)
 		toastMessageDisplay(response.type, response.message, toast, css)
 
 		setLoading(false)
@@ -57,7 +54,7 @@ export default function ImageUploader({ onFileSelectSuccess, onFileSelectError ,
 	    setLoading(false)
 	  } )
 		}
-	} ,[fileName])
+	} ,[fileName,isFileError])
 
 	
 

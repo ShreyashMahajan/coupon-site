@@ -22,7 +22,6 @@ import Register from "views/examples/Register.js";
 import Login from "views/examples/Login.js";
 import CouponRedemption from "CouponRedemption/couponRedemption.jsx"
 import Icons from "views/examples/Icons.js";
-import QrCodeUploader from "components/QrUploader/qrCodeUploader";
 
 var routes = [
   {

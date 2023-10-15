@@ -4,7 +4,6 @@ import React, {  useState , useEffect} from "react";
 
 import { scanFile } from "@openhealthnz-credentials/pdf-image-qr-scanner";
 import ImageUploader from "./qrUploader";
-import { fakeQrValidator } from "./qrCodeHelper";
 
 function QrCodeUploader() {
 	const [resultText, setResultText] = useState("");

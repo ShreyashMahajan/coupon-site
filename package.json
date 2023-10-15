@@ -64,6 +64,9 @@
     "sass": "1.62.1",
     "styled-components": "^6.1.0"
   },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+  },
     "peerDependencies": {
     "react": ">=16.0.0",
     "react-dom": ">=16.0.0"
